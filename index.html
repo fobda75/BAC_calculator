@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Our styles -->
+    <link href="bac.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>Blood Alcohol Content Calculator</h1>
+    <form>
+        <label for="beerNumber">Number of beers consumed:</label>
+        <input type="number" id="beerNumber" max="20" min="0" value="0">
+        <br>
+        <label for="wineNumber">Glasses of wine consumed:</label>
+        <input type="number" id="wineNumber" max="20" min="0" value="0">
+        <br>
+        <label for="liquorNumber">Shots of hard liquor:</label>
+        <input type="number" id="liquorNumber" max="20" min="0" value="0">
+        <br>
+        <label for="drinkerWeight">Enter your current weight in pounds:</label>
+        <input type="number" id="drinkerWeight" max="600" min="0">
+        <br>
+        <label for="drinkingTime">Number of hours since you began drinking:</label>
+        <input type="number" id="drinkingTime" max="12" min="0">
+        <br>
+        <button type="button" id="calculateButton">Calculate my BAC</button>
+    </form>
+    <br>
+    <p id="bloodAlcoholOutput"></p>
+<!-- jQuery first-->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<!-- Our code last -->
+<script src="bac.js"></script>
+
+
+</body>
+</html>
